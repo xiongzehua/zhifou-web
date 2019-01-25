@@ -7,18 +7,18 @@
     <!--</p>-->
     <!--<router-view msg="Welcome to zhifou App"></router-view>-->
     <div class="header">
-      <app-nav></app-nav>
+      <app-homepage></app-homepage>
     </div>
 
     <div class="main">
-      <app-box></app-box>
-      <app-box></app-box>
-      <app-box></app-box>
-      <app-box></app-box>
-      <div class="aa card-1"></div>
-      <div class="aa card-2"></div>
-      <div class="aa card-3"></div>
-      <div class="aa card-4"></div>
+      <!--<app-box></app-box>-->
+      <!--<app-box></app-box>-->
+      <!--<app-box></app-box>-->
+      <!--<app-box></app-box>-->
+      <!--<div class="aa card-1"></div>-->
+      <!--<div class="aa card-2"></div>-->
+      <!--<div class="aa card-3"></div>-->
+      <!--<div class="aa card-4"></div>-->
     </div>
 
 
@@ -40,14 +40,14 @@ import './assets/global.css'
 import './assets/reset.css'
 
 // components
-import AppNav from "./components/AppNav";
 import AppBox from "./components/AppBox";
+import AppHomepage from "./components/AppHomepage";
 
 export default {
   name: 'app',
   components: {
-    AppBox,
-    AppNav
+      AppHomepage,
+      AppBox
   },
   router
 }

@@ -9,6 +9,7 @@
         <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
         <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
       </el-tabs>
+      <el-button type="primary" v-on:click="to4()">主要按钮</el-button>
     </div>
 
     <div class="nav">
@@ -22,10 +23,13 @@
     name: "AppNav",
     data() {
       return {
-        activeName: 'second'
+        activeName: 'first',
       };
     },
     methods: {
+        to4() {
+            this.activeName='fourth'
+        }
     }
   }
 </script>
