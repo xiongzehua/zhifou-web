@@ -1,26 +1,24 @@
 <template>
     <div>
         <div class="nav affix card-1">
-            <el-tabs v-model="activeName">
-                <el-tab-pane label="首页" name="first"></el-tab-pane>
-                <!--<el-input v-model="input" placeholder="请输入内容" suffix-icon="el-icon-date"></el-input>-->
-                <el-tab-pane label="提问" name="third"></el-tab-pane>
-                <el-tab-pane label="我的主页" name="fourth"></el-tab-pane>
-            </el-tabs>
-            <!--<el-button type="primary" v-on:click="to4()">主要按钮</el-button>-->
-        </div>
+            <el-row :gutter="50">
+                <el-col :span="88">
+                    <el-input v-model="input" placeholder="请输入内容" suffix-icon="el-icon-search"></el-input>
+                </el-col>
+                <el-col :span="4">
+                    <el-tabs style="display: inline-block" v-model="activeName">
+                        <el-tab-pane label="首页" name="home"></el-tab-pane>
+                        <el-tab-pane label="提问" name="third"></el-tab-pane>
+                        <el-tab-pane label="我的主页" name="fourth"></el-tab-pane>
+                    </el-tabs>
+                    <!--<el-button type="text">首页</el-button>-->
+                </el-col>
+                <el-col :span="8">
+                    <el-button type="primary" v-on:click="to4()">主要按钮</el-button>
+                </el-col>
+            </el-row>
 
-        <div class="nav">
-            <!--<el-row :gutter="20">-->
-                <!--<el-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></el-col>-->
-                <!--<el-col :span="6" :offset="6"><div class="grid-content bg-purple"></div></el-col>-->
-            <!--</el-row>-->
-            <el-tabs v-model="we">
-                <el-tab-pane label="推荐" name="first"></el-tab-pane>
-                <el-tab-pane label="热榜" name="fourth"></el-tab-pane>
-            </el-tabs>
         </div>
-
     </div>
 </template>
 
@@ -30,13 +28,17 @@
         data() {
             return {
                 activeName: 'first',
-                we: 'first'
+                input: ''
             };
         },
         methods: {
             to4() {
                 this.activeName='fourth'
             }
+            // tabChange (name) {
+            //     console.log(name)
+            //     this.$router.push({name: name})
+            // }
         }
     }
 </script>
@@ -48,6 +50,9 @@
         margin: 0px 0px 0px 0px;
         border-top: 3px solid #009a61;
         background-color: #ffffff;
+    }
+    .content {
+        margin-top: 60px;
     }
     .affix {
         position: fixed;

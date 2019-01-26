@@ -9,8 +9,8 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes: [
     {
-      path: '/test',
-      component: Test,
+       path: '/test',
+       component: Test,
     },
   ]
 })
