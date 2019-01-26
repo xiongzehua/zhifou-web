@@ -7,10 +7,12 @@
     <!--</p>-->
     <!--<router-view msg="Welcome to zhifou App"></router-view>-->
     <div class="header">
-      <app-homepage></app-homepage>
+      <app-home></app-home>
     </div>
 
     <div class="main">
+      <app-attention></app-attention>
+      <app-test></app-test>
       <!--<app-box></app-box>-->
       <!--<app-box></app-box>-->
       <!--<app-box></app-box>-->
@@ -20,8 +22,6 @@
       <!--<div class="aa card-3"></div>-->
       <!--<div class="aa card-4"></div>-->
     </div>
-
-
   </div>
 </template>
 
@@ -40,14 +40,16 @@ import './assets/global.css'
 import './assets/reset.css'
 
 // components
-import AppBox from "./components/AppBox";
-import AppHomepage from "./components/AppHomepage";
+import AppHome from "./components/AppHome";
+import AppAttention from "./components/AppAttention"
+import AppTest from "./components/AppTest";
 
 export default {
   name: 'app',
   components: {
-      AppHomepage,
-      AppBox
+      AppTest,
+      AppHome,
+      AppAttention
   },
   router
 }
@@ -60,13 +62,5 @@ export default {
 
 .main {
   min-height: 1000px;
-}
-
-
-.aa {
-  height: 100px;
-  width: 100px;
-  background-color: lavenderblush;
-  margin: 30px;
 }
 </style>

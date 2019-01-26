@@ -2,7 +2,7 @@
     <div>
         <div class="nav affix card-1">
             <el-row :gutter="50">
-                <el-col :span="88">
+                <el-col :span="6">
                     <el-input v-model="input" placeholder="请输入内容" suffix-icon="el-icon-search"></el-input>
                 </el-col>
                 <el-col :span="4">
@@ -24,7 +24,7 @@
 
 <script>
     export default {
-        name: "AppNav",
+        name: "AppHome",
         data() {
             return {
                 activeName: 'first',

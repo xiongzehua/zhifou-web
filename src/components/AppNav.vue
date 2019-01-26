@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="nav affix card-1">
+    <div class="nav card-1">
       <el-tabs v-model="activeName">
         <el-tab-pane label="用户管理" name="first">
           <div class="qqq"></div>
