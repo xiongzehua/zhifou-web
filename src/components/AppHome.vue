@@ -2,7 +2,7 @@
   <div>
     <div class="nav affix card-1">
       <el-row :gutter="50">
-        <el-col :span="6">
+        <el-col :span="4">
           <el-input v-model="input" placeholder="请输入内容" suffix-icon="el-icon-search"></el-input>
         </el-col>
         <el-col :span="4">
@@ -45,30 +45,12 @@
 <style scoped>
   .nav {
     height: 60px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
     border-top: 3px solid #009a61;
     background-color: #ffffff;
   }
-
-  .content {
-    margin-top: 60px;
-  }
-
   .affix {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-
-  .qqq {
-    width: 80px;
-    height: 80px;
-    background-color: black;
-  }
-
-  .tabs {
-    background-color: aquamarine;
-    width: 500px;
   }
 </style>
