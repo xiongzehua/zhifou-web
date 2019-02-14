@@ -9,18 +9,8 @@
     <div class="header">
       <app-home></app-home>
     </div>
-
     <div class="main">
       <app-attention></app-attention>
-      <!--<app-test></app-test>-->
-      <!--<app-box></app-box>-->
-      <!--<app-box></app-box>-->
-      <!--<app-box></app-box>-->
-      <!--<app-box></app-box>-->
-      <!--<div class="aa card-1"></div>-->
-      <!--<div class="aa card-2"></div>-->
-      <!--<div class="aa card-3"></div>-->
-      <!--<div class="aa card-4"></div>-->
     </div>
   </div>
 </template>
@@ -42,12 +32,10 @@ import './assets/reset.css'
 // components
 import AppHome from "./components/AppHome";
 import AppAttention from "./components/AppAttention"
-import AppTest from "./components/AppTest";
 
 export default {
   name: 'app',
   components: {
-      AppTest,
       AppHome,
       AppAttention
   },
@@ -57,10 +45,18 @@ export default {
 
 <style>
 #app {
-  background-color: #fafafa;
+  /*盒子模型*/
+  width: 1000px;
+  /*内部元素流式布局*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .main {
   min-height: 1000px;
+  padding: 0px 0px 0px 100px;
+  margin: 0px 0px 0px 600px;
 }
 </style>

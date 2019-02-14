@@ -27,7 +27,7 @@
 <style scoped>
   .nav {
     /*盒子模型*/
-    width: 1560px;
+    width: 1680px;
     padding: 20px 0px 0px 0px;
     margin: 50px 0px 50px 0px;
     /*内部元素流式布局*/
