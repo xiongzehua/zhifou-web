@@ -12,7 +12,7 @@
 
     <div class="main">
       <app-attention></app-attention>
-      <app-test></app-test>
+      <!--<app-test></app-test>-->
       <!--<app-box></app-box>-->
       <!--<app-box></app-box>-->
       <!--<app-box></app-box>-->
